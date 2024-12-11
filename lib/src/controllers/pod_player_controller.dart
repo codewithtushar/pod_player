@@ -9,6 +9,7 @@ import '../../pod_player.dart';
 import '../utils/logger.dart';
 import '../utils/video_apis.dart';
 import 'pod_getx_video_controller.dart';
+import 'package:uuid/uuid.dart';
 
 class PodPlayerController {
   late PodGetXVideoController _ctr;
