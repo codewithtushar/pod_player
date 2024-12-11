@@ -29,7 +29,7 @@ class PodPlayerController {
   }
 
   void _init() {
-    getTag = UniqueKey().toString();
+    getTag = const Uuid().v4();
     Get.config(enableLog: PodVideoPlayer.enableGetxLogs);
     _ctr = Get.put(PodGetXVideoController(), permanent: true, tag: getTag)
       ..config(
